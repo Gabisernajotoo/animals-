@@ -14,59 +14,76 @@
     <!--inicio menu responsivo-->
    
     <header id="header">
-        <a id="logo" href="index.html"><img src="./imagens/logo patinha.avif">
+        <a id="logo" href="index.html"><img src="./imagens/logo patinha.avif" alt="logo Animals-"></a>
+        <nav id="nav">
+            <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+             <span id="hamburguer"></span>
+
+            </button>
+            <ul id="menu" role="menu">
+
+                <li><a class="link menu" href="index.html">home</a></li>
+
+                <li><a class="link menu" href="produtos.html">produtos</a></li>
+
+                <li><a class="link menu" href="streaming.html">#streaming</a></li>
+
+                <li><a class="link menu" href="contato.html">contato</a></li>
+
+            </ul>
+
+        </nav>
 
     </header>
     <!--fim menu responsivo-->
 
     <!--inicio carousel pagina principal-->
-    <div id="carouselExempleInterval" classe="carousel slide" data-mdb-ride="carousel">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-               <div class="carousel-item  active" data-mdb-interval="100">
+               <div class="carousel-item  active" data-bs-interval="400">
                     <img
-                    src="./imagens/img coelho.avif"
+                    src="./imagens/animais-de-estimacao-para-apartamento.jpg"
                     class="d-block w-100"
                     alt="..."
                     />
                 </div>
-               <div class="carousel-item " data-mdb-interval="100">
+               <div class="carousel-item " data-bs-interval="400">
                     <img
                     src="./imagens/rot vailer.avif"
-            
                     class="d-block w-100"
                     alt="..."
                     />
                 </div>
-               <div class="carousel-item " data-mdb-interval="100">
+               <div class="carousel-item " data-bs-interval="400">
                     <img
                     src="./imagens/img gato vesguinho.avif"
                     class="d-block w-100"
                     alt="..."
                     />
                 </div>
-			<!-- Alt + Shift + Seta para baixo, copia contéudo -->
+        <!-- Alt + Shift + Seta para baixo, copia contéudo -->
             <!-- Início controle carousel -->
             <button
                 class="carousel-control-prev"
-                data-mdb-target="#carouselExampleInterval"
+                data-bs-target="#carouselExampleInterval"
                 type="button"
-                data-mdb-slide="prev"
+                data-bs-slide="prev"
             >
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>                
             </button>
             <button
                 class="carousel-control-next"
-                data-mdb-target="#carouselExampleInterval"
+                data-bs-target="#carouselExampleInterval"
                 type="button"
-                data-mdb-slide="next"
+                data-bs-slide="next"
             >
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>                
             </button>
     </div>    
 </body>
-<script type="text/javascript src=./bootstrap/js/bootstrep.min.js">
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js">
 
 </script>
 
