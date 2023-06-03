@@ -73,20 +73,19 @@ body, ul {
 }
 @media (max-width: 600px) {
     #menu {
-     display: block;
-     position: absolute;
+        display: block;
+        position: absolute;
         width: 15em;
         top: 70px;
-        right: 0px;    
+        right: 0px;
         background: #e7e7e7;
-     transition: 0.6s;
-     z-index: 1000;
+        transition: 0.6s;
+        z-index: 1000;
         height: 0px;
         padding-left: 5px;
-     visibility: hidden;
+        visibility: hidden;
         overflow-y: hidden;
     }
-
     #menu li {
         padding-top: 30px;
         padding-bottom: 0px;
@@ -98,55 +97,61 @@ body, ul {
         visibility: visible;
         overflow-y: hidden;
     }
-    #btn-mobile{
+    #btn-mobile {
         display: flex;
         padding: 0.5rem 1rem;
         font-size: 1rem;
         border: none;
+        background: none;
         cursor: pointer;
         gap: 0.5rem;
-        background: none;
     }
-    #hamburger { 
-        border-top: 2px solid;/*melhorando o hamburger >> espessura de cada linha*/
-        width: 25px; /*melhorandoo hamburguer >> largura*/
-        color: #e71cbb; /* alterando a cor do hamburger*/
+    #hamburger {
+        border-top: 2px solid; /* Melhorando o hamburger >> Espessura de cada linha */
+        width: 35px; /* Melhorando o hamburger >> Largura */
+        color: #002a60; /* Alterando a cor do hamburger */
     }
-    #hnamburger::after,
+    #hamburger::after,
     #hamburger::before {
         content: '';
         display: block;
-        width: 25px; /* melhorando o hamburger >> largura */
+        width: 35px; /* Melhorando o hamburger >> Largura */
         height: 2px;
         background: currentColor;
-        margin-top: 5px;/*melhorando o hamburger >> espessura de cada linha*/
-        transition: 0.6s;
+        margin-top: 5px; /* Melhorando o hamburger >> Espaçamento entre o hamburger */
+        transition: 0.4s;
         position: relative;
-        border-top: 2px solid;
+        border-top: 2px solid; /* Melhorando o hamburger >> Espessura de cada linha */
     }
     #nav.active #hamburger {
         border-top-color: transparent;
     }
-    #nav.active #hamburger::before{
-        transform: rotate(135deg)
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
     }
-    #nav.active #hamburger::after{
+    #nav.active #hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
     }
+
+
 }
-/* Estilo Css Banner */
+
+/* Estilo CSS Banner */
 .section-banner-home {
     width: 100%;
     height: 500px;
     margin-top: 10px;
     padding: 50px;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: #006ccb3d;
 }
-.section-banner-home img{
-    height: 600px;
+.section-banner-home img {
+    margin: auto;
+    width: 70%;
+    max-height: 400px;
+    display: block;
 }
-.section-banner-home .texto-banner{
+.section-banner-home .texto-banner {
     margin-top: 30px;
     font-size: 22px;
 }
@@ -155,7 +160,7 @@ body, ul {
     width: 60%;
     font-weight: 500;
     padding-bottom: 20px;
-
+    color: white;
 }
 .section-banner-home .texto-banner p {
     font-size: 15px;
@@ -163,18 +168,19 @@ body, ul {
     color: white;
 }
 .section-banner-home .texto-banner a {
-    color:rgb(255, 255, 255) ;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    background-color: #f8077f7a;
+    background-color: #100060;
     padding: 4px 14px;
     font-size: 15px;
 }
 .section-banner-home .texto-banner a:hover {
-    color: #e71cbb33;
-    text-shadow: 2px 2px 4px #ffffff;
+    color: greenyellow;
+    text-shadow: 2px 2px 4px #ffffff7a;
     font-size: 18px;
     font-weight: bold;
 }
+/* Fim CSS Banner */
 /* Fim CSS Banner */
 .destaque h2 {
     margin-top: 15px;
@@ -246,49 +252,56 @@ body, ul {
      margin: 14px auto 50px;
  }
  /* fim CSS galerias */
-  /* inicio CSS footer*/
+
+/* Início CSS Footer */
+
 .rodape {
- padding: 50px 50px 0;
+    padding: 50px 50px 0;
 }
 .rodape .container #logo-rodape img {
- height: 50%;
- width: 50%;
- padding-left:10px;
- transition:transform .3;
- display: block;
+    height: 50%;
+    width: 50%;
+    padding-left: 10px;
+    transition: transform .3s;
+    display: block;
 }
 .rodape .container #logo-rodape img:hover {
-  transform: scale(1.5);
-  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.rodape .info-contato p{
+.rodape .info-contato p {
     margin: 0px;
 }
-.rodape a:hover{
-  font-weight: bold; 
+.rodape a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
 }
-.rodape redes-sociais{
-    display:inline-block;
+.rodape a:hover {
+    font-weight: bold;
 }
-.rodape.redes-sociais img {
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
     width: 45px;
     height: 40px;
-    padding-left:0px;
-    margin-left: 0 .5rem;
-    transition:transform .3;
-    display: block;
-    border-radius: 100px; /* Arredondandodiv do objeto redes sociais */
-   }
-   .rodape .container #logo-rodape img:hover {
-     transform: scale(1.5);
-     box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
-   }
-.rodape p.direitos{
+    padding-left: 0;
+    margin-left: 0.5rem;
+    transition: transform .3s;
+    border-radius: 120px; /* Arredondando div do obejto redes sociais */
+}
+.rodape .redes-sociais img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
+}
+.rodape p.direitos {
     text-align: center;
     margin-top: 40px;
 }
-
 /* Fim CSS Footer */
+
+
 /* Início CSS Streaming */
 
 .embed-container {
@@ -469,6 +482,25 @@ body, ul {
     }
     100%{
         transform: scale(1.2);
-        filter: brightness(150%);
+        filter: brightness(150%);        
     }
+}    
+.whatsapp .quica    {
+    border-radius: 100%;
+    width: 50px;
+    height:50px;
+    animation:quica .4s cubic-bezier( .53, -0.03, .67, 1.06);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
+@keyframes quica{
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(100%);
+        width: 70px;
+        height: 40px;
+
+    }   
+} 
